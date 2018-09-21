@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.blueconic:browscap-java:1.2.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.blueconic/browscap-java/1.2.1/1f7f9c3f6904828096400c554adda381df300a4e/browscap-java-1.2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.blueconic/browscap-java/1.2.1/b2691ed7a857666e7262c0b440a70fdceac21661/browscap-java-1.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
