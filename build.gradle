@@ -23,10 +23,10 @@ repositories {
 }
 
 jar {
-    baseName = 'TipMe'
+    baseName = 'CE'
     version = '0.1.1'
     manifest{
-        attributes("Main-Class": 'com.tipme.Application')
+        attributes("Main-Class": 'com.ce.Application')
     }
 }
 
