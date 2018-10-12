@@ -41,10 +41,10 @@ public class ProductService {
      * Fetch the categories
      * @return InfoResponse
      */
-    public ListResponse getProducts() {
+    public ListResponse getProducts(Integer idCategory) {
 
         // Fetch products
-        List<ProductTemplate> products = productRepository.findAll();
+        List<ProductTemplate> products = productRepository.findAllByIdCategory(idCategory);
 
         // Convert to DTO & sort by oldest to most recent
         List<ProductTemplateDTO> productDTOS = convertProductsToProductDTOs(products);

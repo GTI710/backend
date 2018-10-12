@@ -31,12 +31,13 @@ public class ProductController {
 
     /**
      * Get products
+     * @param idProductCategory
      * @return ListResponse
      */
-    @GetMapping("")
-    public ResponseEntity<?> getProducts() {
+    @GetMapping("/findall/{idProductCategory}")
+    public ResponseEntity<?> getProducts(@PathVariable("idProductCategory") Integer idProductCategory) {
 
-        ListResponse listResponse = productTemplateService.getProducts();
+        ListResponse listResponse = productTemplateService.getProducts(idProductCategory);
         return ResponseEntity.status(listResponse.getStatus()).body(listResponse);
     }
 

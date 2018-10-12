@@ -11,4 +11,6 @@ public interface ProductRepository extends JpaRepository<ProductTemplate, Intege
 
     List<ProductTemplate> findAll();
 
+    List<ProductTemplate> findAllByIdCategory(Integer idCategory);
+
 }
