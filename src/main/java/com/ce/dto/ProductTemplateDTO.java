@@ -1,8 +1,12 @@
 package com.ce.dto;
 
+import java.util.List;
+
 public class ProductTemplateDTO {
 
     private Integer idProductTemplate;
+    private Double averageRating;
+    private List<CommentDTO> comments;
     private String name;
     private Integer sequence;
     private String description;
@@ -28,8 +32,10 @@ public class ProductTemplateDTO {
     public ProductTemplateDTO() {
     }
 
-    public ProductTemplateDTO(Integer idProductTemplate, String name, Integer sequence, String description, String descriptionPurchase, String descriptionSale, String type, String rental, Integer idCategory, Double listPrice, Double volume, Double weight, Boolean saleOk, Boolean purchaseOk, Boolean active, String dateCreated, String dateWrite, Double ratingLastValue, String websiteMetaOgImg, Boolean isPublished, String inventoryAvailability, Double availableThreshold) {
+    public ProductTemplateDTO(Integer idProductTemplate, Double averageRating, List<CommentDTO> comments, String name, Integer sequence, String description, String descriptionPurchase, String descriptionSale, String type, String rental, Integer idCategory, Double listPrice, Double volume, Double weight, Boolean saleOk, Boolean purchaseOk, Boolean active, String dateCreated, String dateWrite, Double ratingLastValue, String websiteMetaOgImg, Boolean isPublished, String inventoryAvailability, Double availableThreshold) {
         this.idProductTemplate = idProductTemplate;
+        this.averageRating = averageRating;
+        this.comments = comments;
         this.name = name;
         this.sequence = sequence;
         this.description = description;
@@ -55,6 +61,22 @@ public class ProductTemplateDTO {
 
     public Integer getIdProductTemplate() {
         return idProductTemplate;
+    }
+
+    public Double getAverageRating() {
+        return averageRating;
+    }
+
+    public void setAverageRating(Double averageRating) {
+        this.averageRating = averageRating;
+    }
+
+    public List<CommentDTO> getComments() {
+        return comments;
+    }
+
+    public void setComments(List<CommentDTO> comments) {
+        this.comments = comments;
     }
 
     public void setIdProductTemplate(Integer idProductTemplate) {

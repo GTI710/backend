@@ -1,9 +1,12 @@
 package com.ce.form.product.response;
 
+import com.ce.dto.CommentDTO;
 import com.ce.dto.ProductTemplateDTO;
 import com.ce.model.ProductTemplate;
 import com.ce.utils.DateFormatter;
 import org.springframework.http.HttpStatus;
+
+import java.util.List;
 
 
 public class InfoResponse {
@@ -21,9 +24,11 @@ public class InfoResponse {
     public InfoResponse() {
     }
 
-    public InfoResponse ok(ProductTemplate p) {
+    public InfoResponse ok(ProductTemplate p, Double averageRating, List<CommentDTO> commentDTOs) {
         this.product = new ProductTemplateDTO(
                 p.getIdProductTemplate(),
+                averageRating,
+                commentDTOs,
                 p.getName(),
                 p.getSequence(),
                 p.getDescription(),
